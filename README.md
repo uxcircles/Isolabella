@@ -22,14 +22,14 @@ Reviewed on isolabellarestaurant.co.uk on 21 October 2026 (a Nicepage template):
 
 | # | Problem | What the redesign does |
 |---|---|---|
-| 1 | The page `<title>` and meta description are **empty**, so Google and link previews have nothing to show | Each page has its own title, description and Open Graph image |
+| 1 | The title is just “Isolabella” and the meta description is **empty**, so Google and link previews have no description to show | Each page has its own title, description and Open Graph image |
 | 2 | **The map is a blank grey box** (the Google Maps embed doesn't load) | Map drawn in the site's colours, with the restaurant pin, Holborn station and a Directions button |
 | 3 | Menus are **PDF only**; nothing can be read or searched on a phone | Full HTML menu: à la carte, set menu and the whole wine and drinks list, with a section index and dish/wine search. PDFs kept for printing |
 | 4 | Booking opens a 700 px popup that doesn't fit a phone screen | Booking page with the same Favourite Table booking (site 1702) embedded at full width, plus group rules and phone/email |
 | 5 | Phone number isn't a link, so it can't be tapped to call | `tel:` links everywhere, and a Call / Book bar on phones |
 | 6 | The About text is one 180-word paragraph; there's no hierarchy past "About us" | Short sections with one H1 per page and a proper heading order |
 | 7 | Gallery photos have **no alt text** | Every photo is described |
-| 8 | No structured data | `Restaurant` JSON-LD with address, coordinates, phone, hours and menu link |
+| 8 | Structured data is an `Organization` with an empty name | `Restaurant` JSON-LD with address, coordinates, phone, hours and menu link |
 | 9 | Nothing says whether the restaurant is open now | "Open now · until 22:30" status worked out on London time; today's row is highlighted in the hours |
 | 10 | Loads jQuery and a 1.2 MB CSS framework; photos are 0.8–1.4 MB JPEGs | One stylesheet, one small script, no jQuery; photos as WebP at two sizes, lazy-loaded |
 | 11 | The menus' spelling is inconsistent ("Caeser", "Fruitti", "Margarita", "Saltinbocca"…) | Tidied in the HTML menu (see the checklist below) |
@@ -47,6 +47,7 @@ assets/vendor/maplibre MapLibre GL JS 4.7.1 (BSD-3), only loaded when the map sc
 assets/img/           Photos (WebP, 800 and 1600 wide), logo.svg, logo-light.svg, mark-light.svg (map pin), og.jpg
 files/                The restaurant's PDF menus, at the same paths as on the current site
 favicon.svg, apple-touch-icon.png, robots.txt
+assets/pitch/          Before/after comparison images for the pitch email
 ```
 
 Photos, logo and menus come from the current isolabellarestaurant.co.uk. The logo was traced from the site's PNG into SVG so it stays sharp. This concept uses only the italic ISOLABELLA wordmark, without the green hill and blue line above and below it; the favicon and map pin use its italic “I”.
