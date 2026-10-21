@@ -24,8 +24,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/img/facade-800.webp" imagesrcset="assets/img/facade-800.webp 800w, assets/img/facade-1600.webp 1600w" imagesizes="(max-width: 900px) 92vw, 620px" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=1">
+  <link rel="preload" as="image" href="assets/img/facade-800.webp" imagesrcset="assets/img/facade-800.webp 800w, assets/img/facade-1600.webp 1600w" imagesizes="(max-width: 900px) 70vw, 440px" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -78,7 +78,7 @@
     </div>
     <div class="header-bar">
       <div class="wrap header-inner">
-        <a class="brand" href="./" aria-label="Isolabella home"><img src="assets/img/logo.svg" alt="Isolabella" width="150" height="54"></a>
+        <a class="brand" href="./" aria-label="Isolabella home"><img src="assets/img/logo.svg" alt="Isolabella" width="190" height="21"></a>
         <nav class="nav" id="nav" data-nav aria-label="Main">
           <a href="menu.html">Menu</a>
           <a href="menu.html#set-menu">Set menu</a>
@@ -98,31 +98,29 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><img src="assets/img/ridge.svg" alt="" width="40" height="14">Italian restaurant · Holborn</p>
-          <h1 class="display">Italian cooking, <em>the proper way,</em> on Red Lion Street</h1>
-          <p class="lede">Handmade pasta, risotto and pizza, fresh fish and rustic meat dishes, with wines chosen from across Italy. White tablecloths, warm service, and a table waiting for you in the heart of London.</p>
-          <div class="hero-cta">
+    <section class="ha">
+      <div class="wrap ha-grid">
+        <div class="ha-copy">
+          <p class="eyebrow ha-in" style="--d:0ms">Italian restaurant · Holborn</p>
+          <h1 class="display ha-in" style="--d:80ms">Italian cooking, <em>the proper way,</em> on Red Lion Street</h1>
+          <p class="lede ha-in" style="--d:160ms">Handmade pasta, fresh fish and rustic meat dishes, with wines from across Italy. White tablecloths, warm service, and a table waiting for you.</p>
+          <div class="hero-cta ha-in" style="--d:240ms">
             <a class="btn btn-primary" href="book.html"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Book a table</a>
             <a class="btn btn-ghost" href="menu.html">See the menu <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
-          <dl class="hero-facts">
-            <div>
-              <dt>Today</dt>
-              <dd><span class="status" data-status>Mon–Fri 12:00–22:30</span></dd>
-            </div>
-            <div>
-              <dt>Find us</dt>
-              <dd><a href="#visit">45 Red Lion Street, WC1R 4PF</a></dd>
-            </div>
-          </dl>
+          <p class="ha-meta ha-in" style="--d:320ms"><span class="status" data-status>Mon–Fri 12:00–22:30</span><a href="#visit"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>45 Red Lion Street, WC1R 4PF</a></p>
         </div>
-        <div class="hero-media">
-          <div class="frame">
-            <img src="assets/img/facade-800.webp" srcset="assets/img/facade-800.webp 800w, assets/img/facade-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 620px" alt="Isolabella's shopfront at 45 Red Lion Street, with its grey awning reading Italian Restaurant" width="800" height="533" fetchpriority="high">
+        <div class="ha-media">
+          <div class="ha-facade">
+            <img src="assets/img/facade-800.webp" srcset="assets/img/facade-800.webp 800w, assets/img/facade-1600.webp 1600w" sizes="(max-width: 900px) 70vw, 440px" alt="Isolabella's shopfront at 45 Red Lion Street, with its grey awning reading Italian Restaurant" width="800" height="533" fetchpriority="high">
           </div>
+          <figure class="ha-dish">
+            <img src="assets/img/lamb-cutlets-800.webp" srcset="assets/img/lamb-cutlets-800.webp 800w, assets/img/lamb-cutlets-1600.webp 1600w" sizes="(max-width: 900px) 56vw, 360px" alt="Grilled lamb cutlets with sage and a herb butter sauce" width="800" height="533">
+          </figure>
+          <a class="ha-stamp" href="#set-menu" aria-label="Set menu, three courses and coffee, £44.50">
+            <svg class="ha-stamp-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="ha-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#ha-circle">SET MENU · THREE COURSES · COFFEE OR TEA ·</textPath></text></svg>
+            <span class="ha-stamp-price" aria-hidden="true"><small>per person</small>£44.50</span>
+          </a>
         </div>
       </div>
     </section>
@@ -187,7 +185,6 @@
 
     <!-- Set menu -->
     <section class="section dark setmenu" id="set-menu">
-      <img class="setmenu-ridge" src="assets/img/ridge-light.svg" alt="" width="520" height="187" loading="lazy">
       <div class="wrap setmenu-grid">
         <div class="reveal">
           <p class="eyebrow">Set menu 2026</p>
@@ -345,7 +342,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <img src="assets/img/logo-light.svg" alt="Isolabella" width="170" height="61" loading="lazy">
+          <img src="assets/img/logo-light.svg" alt="Isolabella" width="200" height="22" loading="lazy">
           <p>Italian restaurant on Red Lion Street, Holborn.</p>
         </div>
         <div>
@@ -374,6 +371,6 @@
     <a class="btn btn-primary" href="book.html"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>Book a table</a>
   </div>
 
-  <script src="main.js?v=1" defer></script>
+  <script src="main.js?v=2" defer></script>
 </body>
 </html>

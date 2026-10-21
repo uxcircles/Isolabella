@@ -138,7 +138,7 @@
 
     new maplibregl.Marker({ element: el(`<span class="roundel"></span><span class="station-name">${container.dataset.station}</span>`, 'map-station'), anchor: 'center' })
       .setLngLat(station).addTo(map);
-    new maplibregl.Marker({ element: el('<span class="pin"><img src="assets/img/ridge-light.svg" alt=""></span><span class="pin-label">Isolabella</span>', 'map-pin'), anchor: 'bottom' })
+    new maplibregl.Marker({ element: el('<span class="pin"><img src="assets/img/mark-light.svg" alt=""></span><span class="pin-label">Isolabella</span>', 'map-pin'), anchor: 'bottom' })
       .setLngLat(home).addTo(map);
 
     // frame both the restaurant and the station

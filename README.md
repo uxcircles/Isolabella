@@ -37,31 +37,32 @@ Reviewed on isolabellarestaurant.co.uk on 21 October 2026 (a Nicepage template):
 ## Structure
 
 ```
-index.html            Home: hero, welcome, favourite dishes, set menu, wine, gallery, find us
+index.html            Home: hero (shopfront, a dish and a set-menu stamp), welcome, favourite dishes, set menu, wine, gallery, find us
 menu.html             Full menu (generated once from the PDFs; edit the HTML directly from now on)
 book.html             Favourite Table booking (sitecode 1702), group rules, contact, hours
 styles.css            All styles; colours and fonts are at the top in :root
 main.js               Mobile nav, open-now status, gallery lightbox, menu index and search, map loader
 assets/map.js         Map style and markers (colours in the C object at the top)
 assets/vendor/maplibre MapLibre GL JS 4.7.1 (BSD-3), only loaded when the map scrolls into view
-assets/img/           Photos (WebP, 800 and 1600 wide), logo.svg, logo-light.svg, ridge motif, og.jpg
+assets/img/           Photos (WebP, 800 and 1600 wide), logo.svg, logo-light.svg, mark-light.svg (map pin), og.jpg
 files/                The restaurant's PDF menus, at the same paths as on the current site
 favicon.svg, apple-touch-icon.png, robots.txt
 ```
 
-Photos, logo and menus come from the current isolabellarestaurant.co.uk. The logo was traced from the site's PNG into SVG so it stays sharp; colours are unchanged.
+Photos, logo and menus come from the current isolabellarestaurant.co.uk. The logo was traced from the site's PNG into SVG so it stays sharp. This concept uses only the italic ISOLABELLA wordmark, without the green hill and blue line above and below it; the favicon and map pin use its italic “I”.
 
 `canonical`, `og:url` and the JSON-LD point to `https://uxcircles.github.io/Isolabella/`; update them if the site moves to its own domain. The PDFs stay at `files/…`, so old links to them keep working.
 
 ## Design direction
 
-- **Colours from the logo:** the green of the hill (`--hill`) for buttons and labels, the blue of the lake line (`--lake`) for emphasis, a deep navy (`--ink`) for text and dark bands, and a warm linen background like the white tablecloths
+- **Colours from the original logo:** its green (`--hill`) for buttons and labels, its blue (`--lake`) for emphasis, a deep navy (`--ink`) for text and dark bands, and a warm linen background like the white tablecloths
 - **Type:** Cormorant Garamond, an Italian-flavoured serif with an italic that echoes the logo's italic capitals, for headings and dish names; Manrope for body text. Both from Google Fonts (SIL Open Font License)
-- **Motifs:** the logo's hill-and-lake line reused as a small mark before section labels, on the map pin and the favicon; an arched frame for the shopfront photo
+- **Hero:** the shopfront in an arched frame, a round close-up of a dish laid over it, and a slowly turning “Set menu · £44.50” stamp that links to the set menu. On load the text fades up in turn and the shopfront eases out of a slow zoom (switched off for visitors who prefer reduced motion)
 - **Italian first, English underneath:** dishes keep their Italian names, with the English description below
 
 ## To confirm with the restaurant before launch
 
+- [ ] **Logo**: this concept drops the hill and water lines from the logo and keeps only the wordmark. The restaurant needs to agree to that
 - [ ] **Menu prices**: the à la carte PDF is labelled 2024. Are prices current? Prices in the PDF text layer were cut off, so they were read from the rendered pages. Please double-check them
 - [ ] **Spelling fixes** in the HTML menu, e.g. Caesar, frutti di mare, Margherita, Napoletana, Quattro formaggi, Saltimbocca, Bignè, Mousse al cioccolato, Gelato alla nocciola, Moretti, Veuve Clicquot. Check they're happy with them
 - [ ] **Wine notes** were shortened, and obvious copy errors in the PDF were left out (e.g. the Prosecco note repeats the Merlot's "hint of oak"; Planeta La Segreta, a white, mentions tannins). The Zinfandel bottle price is £34.94 in the PDF; shown as £34.95
