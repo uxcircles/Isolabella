@@ -2,7 +2,7 @@
 
 A redesign concept for [Isolabella](http://www.isolabellarestaurant.co.uk/), an Italian restaurant at 45 Red Lion Street, Holborn, London. Plain HTML, CSS and JavaScript with no build step, so any static host can serve it.
 
-> **Concept only.** Designed by [UX CIRCLES](https://ux-circles.com/web); this is not Isolabella's official website.
+> **Concept only.** Designed by [UX CIRCLES](https://ux-circles.com/restaurants); this is not Isolabella's official website.
 > Every page has a "Concept" stripe at the top and `noindex`, and `robots.txt` blocks crawlers, so it won't compete with the real site in search.
 > If the restaurant adopts it: remove `.concept-bar` from each page, remove `<meta name="robots" content="noindex, nofollow">`, and change `robots.txt` to `Allow: /`.
 
